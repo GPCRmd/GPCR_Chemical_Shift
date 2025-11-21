@@ -24,6 +24,51 @@ conda activate CS_env
 
 *Note: Make sure to have Conda installed before running these commands.*
 
+# Chemical Shift prediction (CS_computation)
+ 
+The chemical shift prediction is performed using two ways:
+- Mdtraj: SPARTA+ & Shiftyx2
+- UCBshift: CSpred  
+
+## Environment Setup
+To run both ways is necessary to install the next software: 
+- DSSP 
+- BLAST+
+- mtm-align
+- reduce
+- CSpred: becomes from UCBShift2.0 program: https://github.com/THGLab/CSpred 
+- Miniconda3
+
+To import the environment a .yml file is generated 'CS_computation/cscomp_environment.yml'
+
+```bash
+conda env create -f cscomp_environment.yml
+conda activate cspred
+```
+
+## Run program
+
+On both ways is necessary to configure the path of input and output files, and the software program paths. 
+### SPARTA+ & SHIFTYX2
+
+```bash
+nohup python get_chemshift.py --cores 3 > chemshift.log 2>&1 & 
+```
+
+### UCBSHIFT
+
+```bash
+nohup python get_chemshift.py --cores 3 > chemshift.log 2>&1 & 
+```
+
+## Example output
+
+The directory example contains output files from these scripts used: 
+
+- SPARTA+: cs_sparta_* 
+- Shiftyx2: cs_shifty_*
+- UCBshift: cs_ucbshift_*
+
 ---
 
 **Contact:**  
