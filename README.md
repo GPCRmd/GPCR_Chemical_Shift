@@ -25,7 +25,8 @@ conda activate CS_env
 *Note: Make sure to have Conda installed before running these commands.*
 
 # Chemical Shift prediction (CS_computation)
- 
+*Note: the chemical shift prediction scripts were built for our system machine that contains specific rutes and it is necessary to modify them to include input and output paths.
+
 The chemical shift prediction is performed using two ways:
 - Mdtraj: SPARTA+ & Shiftyx2
 - UCBshift: CSpred  
@@ -52,14 +53,17 @@ On both ways is necessary to configure the path of input and output files, and t
 ### SPARTA+ & SHIFTYX2
 
 ```bash
-nohup python get_chemshift.py --cores 3 > chemshift.log 2>&1 & 
+nohup python get_chemshift.py --dynid 2375 --cores 3 > cs_sparta_shifty.log 2>&1 & 
 ```
 
 ### UCBSHIFT
 
 ```bash
-nohup python get_chemshift.py --cores 3 > chemshift.log 2>&1 & 
+nohup python get_cspred.py --dynid 2375 --cores 3 > cs_ucbshift.log 2>&1 & 
 ```
+
+## Example input
+To run the scripts, we used the following files stored in GPCRmd:https://www.gpcrmd.org/dynadb/dynamics/id/2375/ and the compl_info.json file.
 
 ## Example output
 
