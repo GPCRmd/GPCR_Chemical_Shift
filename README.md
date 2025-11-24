@@ -33,10 +33,10 @@ The chemical shift prediction is performed using two ways:
 
 ## Environment Setup
 To run both ways is necessary to install the next software: 
-- DSSP 
-- BLAST+
-- mtm-align
-- reduce
+- DSSP - v.2.04
+- BLAST+ - v.2.9.0
+- mtm-align - v.20180725
+- reduce - v.3.23
 - CSpred: becomes from UCBShift2.0 program: https://github.com/THGLab/CSpred 
 - Miniconda3
 
@@ -63,7 +63,7 @@ nohup python get_cspred.py --dynid 2375 --cores 3 > cs_ucbshift.log 2>&1 &
 ```
 
 ## Example input
-To run the scripts, we used the following files stored in GPCRmd:https://www.gpcrmd.org/dynadb/dynamics/id/2375/ and the compl_info.json file.
+To run the scripts, we used the following files stored in GPCRmd: https://www.gpcrmd.org/dynadb/dynamics/id/2375/ and the compl_info.json file.
 
 ## Example output
 
