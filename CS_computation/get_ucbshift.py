@@ -18,9 +18,9 @@ from MDAnalysis.topology.guessers import guess_types
 from Bio.Data import IUPACData
 
 # Incorporate Sparta and shiftx2 to the path, so mdtraj can work with them
-filespath = '...'
-outpath = '...'
-example = '...'
+filespath = './'
+outpath = './example/'
+example = './example/'
 cspred_path = './CSpred/CSpred.py'  # Update with the actual path to CSpred.py
 
 ### Functions
@@ -319,7 +319,7 @@ if __name__ == '__main__':
     
 	# Take original trajectory fileid from compl_data
 	print("Reading GPCRmd information...")
-	compl_data = json_dict(filespath+"Precomputed/compl_info.json")
+	compl_data = json_dict(filespath+"/compl_info.json")
 
 	# Directory where formated CS files are to be stores
 	# outfolder = outpath+"Precomputed/chemical_shift/"

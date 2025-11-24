@@ -12,8 +12,8 @@ import resource
 import time
 
 # Incorporate Sparta and shiftx2 to the path, so mdtraj can work with them
-filespath = ''
-outpath = ''
+filespath = './'
+outpath = './example/'
 os.environ['PATH'] = os.environ['PATH']+':.../software/shiftx2-linux/'
 os.environ['PATH'] = os.environ['PATH']+':.../software/SPARTA+/'
 os.environ["SPARTAP_DIR"] = ".../software/SPARTA+/"
@@ -347,7 +347,7 @@ gpcrmd_only = args.gpcrmd_only
 if __name__ == '__main__':
 
 	# Take original trajectory fileid from compl_data
-	compl_data = json_dict(filespath+"Precomputed/compl_info.json")
+	compl_data = json_dict(filespath+"/compl_info.json")
 
 	# Directory where formated CS files are to be stores
 	outfolder = outpath+".../"
