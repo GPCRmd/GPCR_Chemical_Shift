@@ -65,6 +65,8 @@ nohup python get_cspred.py --dynid 2375 --cores 3 > cs_ucbshift.log 2>&1 &
 ## Example input
 To run the scripts, we used the following files stored in GPCRmd: https://www.gpcrmd.org/dynadb/dynamics/id/2375/ and the compl_info.json file.
 
+*Note: The trajectory .dcd file have a big size. For this reason, it is necessary to use the link to download it. 
+
 ## Example output
 
 The directory example contains output files from these scripts used: 
