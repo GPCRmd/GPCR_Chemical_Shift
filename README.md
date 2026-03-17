@@ -1,7 +1,7 @@
 # Integrative Biophysical Illumination of the 3D GPCRome Dynamics
 
 **Authors:**  
-Brian Medel-Lacruz, David Aranda-García, Aditya Prasad Patra, Tomasz Maciej Stepniewski, Mariona Torrens-Fontanals, Franz Hagn, Massimiliano Bonomi, Jiafei Mao, Jana Selent
+Brian Medel-Lacruz, Adrián García-Recio, David Aranda-García, Aditya Prasad Patra, Tomasz Maciej Stepniewski, Mariona Torrens-Fontanals, Franz Hagn, Massimiliano Bonomi, Jiafei Mao, Jana Selent
 
 ## Repository Structure
 
