@@ -64,12 +64,10 @@ To ensure reproducibility, we provide the following estimates for a "normal" des
 
 Execution times were measured using the Python `time` module. Benchmarks are provided for different computational loads:
 
-| Analysis Type | Dataset Size | Total Seconds | Formatted Time |
-| :--- | :--- | :--- | :--- |
-| **SPARTA+** | Standard Demo | 18,207.6 s | ~5h 03m |
-| **UCBShift (Short)** | Minimum Frame Set | 121,866.5 s | ~33.8h |
-| **UCBShift (Median)** | Average Frame Set | 173,795.8 s | ~48.3h |
-| **UCBShift (Long)** | Maximum Frame Set | 195,773.8 s | ~54.4h |
+| Analysis Type | Total Seconds | Formatted Time |
+| :--- | :--- | :--- |
+| **SPARTA+ & Shiftx2** | 18,207.6 s | ~5h 03m |
+| **UCBShift2.0** | 173,795.8 s | ~48.3h |
 
 ---
 
